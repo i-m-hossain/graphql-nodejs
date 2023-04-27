@@ -8,7 +8,10 @@ type Book implements Timestamps {
   createdAt: Date!
   updatedAt: Date!
 }
-
+type Books {
+  info: Info!
+  results: [Book]!
+}
 # Inputs
 input BookCreateInput {
   name: String!

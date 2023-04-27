@@ -8,7 +8,10 @@ type Publisher implements Timestamps {
   createdAt: Date!
   updatedAt: Date!
 }
-
+type Publishers {
+  info: Info!
+  results: [Publisher]!
+}
 # Inputs
 input PublisherCreateInput {
   name: String!
